@@ -24,7 +24,7 @@ const createGestureRecognizer = async () => {
     gestureRecognizer = await GestureRecognizer.createFromOptions(vision, {
         baseOptions: {
             modelAssetPath:
-                "./models/gesture_recognizer.task",
+                "./models/gesture_recognizer-6.task",
             delegate: "GPU"
         },
         runningMode: runningMode,
@@ -34,6 +34,7 @@ const createGestureRecognizer = async () => {
     document.querySelector('#button_webcam').innerHTML = '<i class="bi bi-camera"></i> Start';
 };
 createGestureRecognizer();
+
 
 let video = null;
 
