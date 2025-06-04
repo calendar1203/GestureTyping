@@ -50,7 +50,7 @@ let cam = null;
 let p5canvas = null;
 
 function setup() {
-  p5canvas = createCanvas(320, 240);
+  p5canvas = createCanvas(240, 180);
   p5canvas.parent('#canvas');
 
   // When gestures are found, the following function is called. The detection results are stored in results.
